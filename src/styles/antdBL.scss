@@ -1,0 +1,177 @@
+:global {
+  body {
+    .ant-btn-ghost:hover,
+    .ant-btn-ghost:focus {
+      color: $buttonHoverTitle;
+      border-color: $buttonHoverBorder;
+    }
+    .has-error .ant-input-number,
+    .has-error .ant-time-picker-input {
+      border-color: #f45531;
+    }
+    .ant-form-explain {
+      margin-top: 0;
+    }
+    .has-error .ant-form-explain,
+    .has-error .ant-form-split {
+      color: $error;
+    }
+    .ant-select-dropdown-menu-item:hover,
+    .ant-dropdown-menu-item:hover,
+    .ant-dropdown-menu-submenu-title:hover {
+      color: $blacklakeGreen;
+    }
+    .ant-select-dropdown-menu-item-disabled:hover {
+      color: rgba(0, 0, 0, 0.25) !important;
+    }
+    .ant-dropdown-menu-item-disabled:hover {
+      color: rgba(0, 0, 0, 0.25) !important;
+    }
+    .ant-select-dropdown--multiple .ant-select-dropdown-menu-item {
+      padding-right: 24px;
+    }
+    .ant-badge-status-success {
+      background-color: $primary;
+    }
+    .ant-badge-status-dot {
+      width: 8px;
+      height: 8px;
+    }
+    .ant-table .ant-table-row-indent + .ant-table-row-expand-icon:hover {
+      color: $blacklakeGreen;
+      border-color: $blacklakeGreen;
+    }
+    .ant-table-scroll table {
+      width: 100%;
+    }
+    //.anticon-close-circle {
+    //  color: $error;
+    //}
+    .ant-pagination-item-active {
+      border-color: $primary;
+      background: $primary;
+    }
+    .ant-pagination-item-active a,
+    .ant-pagination-item-active:hover a {
+      color: #fff;
+    }
+    //.ant-upload-list-item-name {
+    //  margin-right: 5px;
+    //}
+    .ant-upload-list {
+      width: 450px;
+    }
+    .ant-modal {
+      overflow: auto;
+      max-height: 85%;
+      padding-bottom: 0;
+    }
+    .ant-breadcrumb > span:last-child {
+      font-weight: normal;
+    }
+    .ant-tooltip-inner {
+      word-wrap: break-word;
+    }
+    .ant-form-item {
+      margin-bottom: 14px;
+      display: flex;
+    }
+    .ant-table .ant-form-item {
+      margin-bottom: 0;
+    }
+    .ant-radio-checked > .ant-radio-inner {
+      border-width: 4px;
+      transition: all 0.06s ease-out;
+    }
+    .ant-radio-checked .ant-radio-inner:after {
+      opacity: 0;
+    }
+    .ant-form-item-label {
+      width: 120px;
+      height: 40px;
+      display: flex;
+      margin-right: 20px;
+      justify-content: flex-end;
+      align-items: center;
+      line-height: 16px;
+      white-space: pre-wrap;
+    }
+    .ant-form-item-label .ant-form-item-no-colon:after {
+      content: '';
+      margin: 0;
+    }
+    .ant-modal-header {
+      border-bottom: none;
+    }
+    .ant-modal-footer {
+      border-top: none;
+      & > div {
+        display: flex;
+        justify-content: center;
+      }
+      .ant-btn {
+        margin: 0 10px;
+      }
+    }
+    .ant-upload.ant-upload-select-picture-card {
+      background-color: transparent;
+      border-radius: 20px;
+    }
+    .ant-spin-nested-loading > div > .ant-spin {
+      z-index: 10000;
+    }
+    .ant-table-scroll-top-bar-wrapper {
+      width: 100%;
+      overflow-x: scroll;
+      position: absolute;
+      z-index: 4;
+    }
+    .ant-table-scroll-top-bar-wrapper::-webkit-scrollbar {
+      height: 8px;
+    }
+    .ant-table-scroll-top-bar-wrapper::-webkit-scrollbar-thumb {
+      background-color: #c2c2c2;
+      border-radius: 6px;
+      border: 1px solid #fafafa;
+      &:hover {
+        background: #555;
+      }
+    }
+    .ant-table-scroll-top-bar {
+      height: 1px;
+    }
+    .ant-table-hide-scrollbar::-webkit-scrollbar-thumb {
+      background-color: rgba(139, 139, 139, 1);
+      border-radius: 6px;
+    }
+    .ant-table-fixed-header .ant-table-scroll .ant-table-header {
+      margin-bottom: 0;
+    }
+    .ant-table-fixed-left,
+    .ant-table-fixed-right {
+      // antd默认zIndex: auto 会导致table内的输入框内icon透过fixed列
+      z-index: 1;
+    }
+    .ant-table-scroll table .ant-table-fixed-columns-in-body:not([colspan]) {
+      // a {
+      //   color: transparent !important;
+      // // }
+      visibility: visible;
+      color: transparent !important;
+      & > * {
+        visibility: hidden;
+      }
+    }
+    .ant-table-thead > tr > th .ant-table-column-sorter .ant-table-column-sorter-inner-full {
+      margin-top: 0.35em;
+    }
+    .ant-table-fixed-header .ant-table-scroll .ant-table-header::-webkit-scrollbar-thumb {
+      background: #c2c2c2;
+      border-radius: 15px;
+      border: 3px solid #fafafd;
+      &:hover {
+        background: #555;
+      }
+    }
+  }
+}
