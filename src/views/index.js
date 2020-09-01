@@ -9,6 +9,7 @@ import Case1Form from "./case/Case1";
 import Case2Form from "./case/Case2";
 import Case3Form from "./case/Case3";
 import Case4Form from "./case/Case4";
+import Case5Form from "./case/Case5";
 
 import LinkCase1Form from "./linkAges/Case1";
 import LinkCase2Form from "./linkAges/Case2";
@@ -28,6 +29,12 @@ import ExtendsCase2Form from "./extends/Case2";
 import ExtendsCase3Form from "./extends/Case3";
 import ExtendsCase4Form from "./extends/Case4";
 
+import LayoutCase1Form from "./Layouts/Case1";
+
+import ValueCase1Form from "./value/Case1";
+import ValueCase2Form from "./value/Case2";
+import ValueCase3Form from "./value/Case3";
+
 export {
     Basic,
     Editor,
@@ -38,6 +45,7 @@ export {
     Case2Form,
     Case3Form,
     Case4Form,
+    Case5Form,
     LinkCase1Form,
     LinkCase2Form,
     LinkCase3Form,
@@ -51,5 +59,9 @@ export {
     ExtendsCase1Form,
     ExtendsCase2Form,
     ExtendsCase3Form,
-    ExtendsCase4Form
+    ExtendsCase4Form,
+    LayoutCase1Form,
+    ValueCase1Form,
+    ValueCase2Form,
+    ValueCase3Form,
 };

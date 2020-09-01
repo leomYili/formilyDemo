@@ -27,6 +27,8 @@ const CustomSelect = (props) => {
     );
 };
 
+CustomSelect.isFieldComponent = true;
+
 const SelfIncList = ({ schema, value, path, mutators }) => {
     const props = schema.getExtendsComponentProps();
     const dataSource = schema.enum || [];
@@ -78,6 +80,7 @@ const Case3Form = () => {
                 initialValues={{
                     aa: [{}, {}],
                 }}
+                onSubmit={console.info}
             >
                 <SchemaMarkupField
                     name="aa"

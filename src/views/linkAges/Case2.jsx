@@ -81,6 +81,8 @@ const LinkCase2Form = () => {
         setFunc(e);
     };
 
+    console.log("render?");
+
     return (
         <>
             <Printer>

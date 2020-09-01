@@ -66,6 +66,18 @@ const JsonSchemaForm = () => {
         });
     };
 
+    const handleOnGraph = () => {
+        console.log(actions.getFormGraph());
+
+        let nodes = actions.getFormGraph();
+
+        nodes.username.props.title = "自定义字符串";
+
+        console.log(nodes);
+
+        actions.setFormGraph(nodes);
+    };
+
     const handleReplaceSchema = (e) => {
         setCustomSchema(JSON.parse(e.target.value));
         // handleRefresh()
@@ -90,6 +102,9 @@ const JsonSchemaForm = () => {
                         <Submit>提交</Submit>
                         <Button onClick={handleRefresh}>
                             自定义重置(刷新schema的)
+                        </Button>
+                        <Button onClick={handleOnGraph}>
+                            自定义设置FormGraph
                         </Button>
                     </FormButtonGroup>
                 </SchemaForm>

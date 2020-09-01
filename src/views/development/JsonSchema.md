@@ -69,6 +69,22 @@ formily 中把拥有 type 属性的对象叫做一个节点。节点有 2 种，
 
 更加详细的属性请参考官方文档: <https://formilyjs.org/#/0yTeT0/jAU8UVSYI8>
 
+### 分类
+
+`Formily` 对标准 `schema` 进行了扩展,扩展之后的节点分为:
+
+1. 表单控件节点
+
+    通过`x-component`进行使用或者对应type的内置基础表单控件.
+
+2. 数据容器节点
+
+    通过声明type类型为 `object` 与 `array` 时.可以指定它的 `properties` 或者 `items`,继续往下递归
+
+3. UI容器节点(virtualField组件)
+
+    通过声明组件拥有 `isVirtualFieldComponent` 静态属性,那么就会被当做虚拟组件,同时组件属性可以拿到 `VirtualFieldProps`,或者通过相关api进行全局扩展.特点是只会在schema中显示结构,不影响value
+
 ## 提前准备好的 schema
 
 > 组件因为需要注册,所以从简

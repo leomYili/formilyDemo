@@ -58,6 +58,7 @@ const Case2 = () => {
                     Input,
                     DynamicCheckbox,
                 }}
+                onSubmit={console.log}
             >
                 <SchemaMarkupField
                     name="aa"

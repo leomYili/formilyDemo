@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
 import { SchemaForm, SchemaMarkupField, useSchemaProps } from "@formily/antd"; // 或者 @formily/next
 import { Input } from "antd";
 

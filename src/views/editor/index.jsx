@@ -1,5 +1,5 @@
 import React from "react";
-import { SchemaEditor } from "@formily/react-schema-editor";
+/* import { SchemaEditor } from "@formily/react-schema-editor"; */
 import md from "./editor.md";
 
 function SchemaEditorDemo() {
@@ -188,7 +188,7 @@ function SchemaEditorDemo() {
                     自定义快速搭建工具
                 </a>
             </h1>
-            <SchemaEditor schema={schema} onChange={setSchema} />
+            {/* <SchemaEditor schema={schema} onChange={setSchema} /> */}
         </>
     );
 }

@@ -6,6 +6,7 @@ import {
     Case2Form,
     Case3Form,
     Case4Form,
+    Case5Form,
     LinkCase1Form,
     LinkCase2Form,
     LinkCase3Form,
@@ -103,7 +104,14 @@ storiesOf(`案例/复杂案例`, module)
     })
     .add("拓展自增列表渲染(官方版)", () => <Case4Form.component />, {
         notes: { markdown: Case4Form.markdown || "" },
-    });
+    })
+    .add(
+        "超复杂自定义组件(嵌套过深带来的通信)",
+        () => <Case5Form.component />,
+        {
+            notes: { markdown: Case5Form.markdown || "" },
+        }
+    );
 
 storiesOf(`案例/表单扩展`, module)
     .add("Form自身扩展", () => <ExtendsCase1Form.component />, {
