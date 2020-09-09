@@ -14,6 +14,7 @@ import Case5Form from "./case/Case5";
 import LinkCase1Form from "./linkAges/Case1";
 import LinkCase2Form from "./linkAges/Case2";
 import LinkCase3Form from "./linkAges/Case3";
+import LinkCase4Form from "./linkAges/Case4";
 
 import LifeCase1Form from "./lifecycle/Case1";
 import LifeCase2Form from "./lifecycle/Case2";
@@ -35,6 +36,8 @@ import ValueCase1Form from "./value/Case1";
 import ValueCase2Form from "./value/Case2";
 import ValueCase3Form from "./value/Case3";
 
+import RXCase1Form from "./rxjs/Case1";
+
 export {
     Basic,
     Editor,
@@ -49,6 +52,7 @@ export {
     LinkCase1Form,
     LinkCase2Form,
     LinkCase3Form,
+    LinkCase4Form,
     LifeCase1Form,
     LifeCase2Form,
     LifeCase3Form,
@@ -64,4 +68,5 @@ export {
     ValueCase1Form,
     ValueCase2Form,
     ValueCase3Form,
+    RXCase1Form
 };

@@ -34,6 +34,7 @@
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "3.4.3",
+    "rxjs": "^6.6.3",
     "source-map-explorer": "^2.5.0",
     "storybook-readme": "^5.0.8",
     "styled-components": "^5.1.1"

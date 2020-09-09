@@ -10,6 +10,7 @@ import {
     LinkCase1Form,
     LinkCase2Form,
     LinkCase3Form,
+    LinkCase4Form,
     LifeCase1Form,
     LifeCase2Form,
     LifeCase3Form,
@@ -51,6 +52,13 @@ storiesOf(`案例/表单联动`, module)
         () => <LinkCase3Form.component></LinkCase3Form.component>,
         {
             notes: { markdown: LinkCase3Form.markdown || "" },
+        }
+    )
+    .add(
+        "jsx原生联动",
+        () => <LinkCase4Form.component></LinkCase4Form.component>,
+        {
+            notes: { markdown: LinkCase4Form.markdown || "" },
         }
     );
 
