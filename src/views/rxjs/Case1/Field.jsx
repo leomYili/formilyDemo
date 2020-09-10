@@ -178,7 +178,7 @@ export function RXField(props) {
                             visited: true,
                             touched: true,
                         })
-                    ),
+                    )
                 )
                 .subscribe();
 
@@ -212,6 +212,8 @@ export function RXField(props) {
         };
     }, []);
 
+    console.log(fieldMeta);
+
     return (
         <div style={{ margin: 10 }}>
             {props.children({
@@ -222,6 +224,7 @@ export function RXField(props) {
                 onFocus,
                 onBlur,
             })}
+            <p style={{ color: "red" }}>{fieldMeta.error}</p>
         </div>
     );
 }

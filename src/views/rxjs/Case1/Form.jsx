@@ -100,7 +100,9 @@ export function RXForm(props) {
                 return formActionSubject$.subscribe(observer);
             },
             updateFormValues: (formValues) => {
-                const nextFormState = formUpdateValues(formStateSubject$.getValue())(formValues);
+                const nextFormState = formUpdateValues(
+                    formStateSubject$.getValue()
+                )(formValues);
                 formStateSubject$.next(nextFormState);
             },
             getFormValues,
@@ -132,6 +134,7 @@ export function RXForm(props) {
         <Provider value={CTXValue}>
             {props.children({
                 handleSubmit,
+                updateFormValues: CTXValue.updateFormValues,
             })}
         </Provider>
     );
