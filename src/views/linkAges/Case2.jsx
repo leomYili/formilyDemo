@@ -69,6 +69,10 @@ const LinkCase2Form = () => {
             "自定义获取的values为:",
             actions.getFormState((state) => state.values)
         );
+
+        actions.setFieldState("aaa",(state) => {
+
+        })
     };
 
     const setFunc = _.debounce((e) => {

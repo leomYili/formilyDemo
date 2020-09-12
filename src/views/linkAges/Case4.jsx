@@ -32,7 +32,7 @@ const { onFieldValueChange$ } = FormEffectHooks;
 const useOneToManyEffects = (setFly) => {
     const { setFieldState } = createFormActions();
     onFieldValueChange$("aa").subscribe(({ value }) => {
-        setFieldState("*(bb,cc,dd,card)", (state) => {
+        setFieldState("*(bb,cc,dd,ff,card)", (state) => {
             state.value = "";
             state.visible = value;
         });

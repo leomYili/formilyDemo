@@ -38,6 +38,10 @@ import ValueCase3Form from "./value/Case3";
 
 import RXCase1Form from "./rxjs/Case1";
 
+import PerformanceCase1Form from "./performance/Case1";
+import PerformanceCase2Form from "./performance/Case2";
+import PerformanceCase3Form from "./performance/Case3";
+
 export {
     Basic,
     Editor,
@@ -68,5 +72,8 @@ export {
     ValueCase1Form,
     ValueCase2Form,
     ValueCase3Form,
-    RXCase1Form
+    RXCase1Form,
+    PerformanceCase1Form,
+    PerformanceCase2Form,
+    PerformanceCase3Form
 };

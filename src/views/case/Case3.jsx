@@ -6,6 +6,7 @@ import {
     Submit,
     FormPath,
     FormButtonGroup,
+    createFormActions,
 } from "@formily/antd";
 import Printer from "@formily/printer";
 import { Button, Select, Input } from "antd";
@@ -14,13 +15,30 @@ import md from "./case3.md";
 
 const { Option } = Select;
 
+const actions = createFormActions();
+
+const getArray = () => {
+    const num = 50;
+
+    let _arr = [];
+    for (let i = 0; i < num; i++) {
+        _arr.push({});
+    }
+    return _arr;
+};
+
 const CustomSelect = (props) => {
+    console.log(props.dataSource);
     return (
-        <Select value={props.value} onChange={props.onChange}>
+        <Select
+            style={{ width: 100 }}
+            value={props.value}
+            onChange={props.onChange}
+        >
             {props.dataSource &&
                 props.dataSource.map((item, index) => (
                     <Option key={item.value} value={item.value}>
-                        {item.label}
+                        {item.value}
                     </Option>
                 ))}
         </Select>
@@ -69,6 +87,14 @@ const SelfIncList = ({ schema, value, path, mutators }) => {
 SelfIncList.isFieldComponent = true;
 
 const Case3Form = () => {
+    const handleOnClick = () => {
+        actions.hostUpdate(() => {
+            actions.setFieldState("aa.*", (state) => {
+                state.editable = false;
+            });
+        });
+    };
+
     return (
         <Printer>
             <SchemaForm
@@ -78,8 +104,9 @@ const Case3Form = () => {
                     SelfIncList,
                 }}
                 initialValues={{
-                    aa: [{}, {}],
+                    aa: getArray(),
                 }}
+                actions={actions}
                 onSubmit={console.info}
             >
                 <SchemaMarkupField
@@ -107,6 +134,7 @@ const Case3Form = () => {
                 <FormButtonGroup>
                     <Submit>提交</Submit>
                 </FormButtonGroup>
+                <Button onClick={handleOnClick}>切换可编辑状态</Button>
             </SchemaForm>
         </Printer>
     );

@@ -8,9 +8,9 @@ import {
 import { Input, Divider } from "antd";
 import "antd/dist/antd.css";
 
-/* registerFormComponent((props) => {
+registerFormComponent((props) => {
     return <div>全局扩展Form组件{props.children}</div>;
-}); */
+});
 
 const formComponent = (props) => {
     return <div style={{border:"1px solid #000"}}>实例级扩展Form组件{props.children}</div>;
